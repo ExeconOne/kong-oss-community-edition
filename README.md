@@ -62,6 +62,7 @@ Notes and credits:
 - Original authorship remains credited to Kong Inc. and all contributors (see COPYRIGHT). The license stays Apache 2.0 (see LICENSE).
 - Execon One publishes independent releases starting at **v1.0.0**.
 - Our version numbers do **not** match upstream versions.
+- Artifacts are published with the `oss-community-edition` identifier (e.g., `<name>-oss-community-edition`) to distinguish them from upstream or other distributions.
 
 Issues and PRs are welcome; maintenance is best effort.
 
