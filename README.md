@@ -9,9 +9,46 @@ By providing functionality for proxying, routing, load balancing, health checkin
 
 Kong runs natively on Kubernetes thanks to its official [Kubernetes Ingress Controller](https://github.com/Kong/kubernetes-ingress-controller).
 
+[![][kong-diagram]][kong-url]
+
+---
+
+[Installation](https://konghq.com/install/#kong-community) | [Documentation](https://docs.konghq.com) | [Discussions](https://github.com/Kong/kong/discussions) | [Forum](https://discuss.konghq.com) | [Blog](https://konghq.com/blog) | [Builds][kong-master-builds] | [AI Gateway](https://konghq.com/products/kong-ai-gateway) | [Cloud Hosted Kong](https://konghq.com/kong-konnect/)
+
+---
+## Getting Started
+
+If you prefer to use a cloud-hosted Kong, you can [sign up for a free trial of Kong Konnect](https://konghq.com/products/kong-konnect/register?utm_medium=Referral&utm_source=Github&utm_campaign=kong-gateway&utm_content=konnect-promo-in-gateway&utm_term=get-started) and get started in minutes. If not, you can follow the instructions below to get started with Kong on your own infrastructure.
+
+Let’s test drive Kong by adding authentication to an API in under 5 minutes.
+
+We suggest using the docker-compose distribution via the instructions below, but there is also a [docker installation](https://docs.konghq.com/gateway/latest/install/docker/#install-kong-gateway-in-db-less-mode) procedure if you’d prefer to run the Kong Gateway in DB-less mode.
+
+Whether you’re running in the cloud, on bare metal, or using containers, you can find every supported distribution on our [official installation](https://konghq.com/install/#kong-community) page.
+
+1) To start, clone the Docker repository and navigate to the compose folder.
+```cmd
+  $ git clone https://github.com/Kong/docker-kong
+  $ cd docker-kong/compose/
+```
+
+2) Start the Gateway stack using:
+```cmd
+  $ KONG_DATABASE=postgres docker-compose --profile database up
+```
+
+The Gateway is now available on the following ports on localhost:
+
+- `:8000` - send traffic to your service via Kong
+- `:8001` - configure Kong using Admin API or via [decK](https://github.com/kong/deck)
+- `:8002` - access Kong's management Web UI ([Kong Manager](https://github.com/Kong/kong-manager)) on [localhost:8002](http://localhost:8002)
+
+Next, follow the [quick start guide](https://docs.konghq.com/gateway-oss/latest/getting-started/configuring-a-service/
+) to tour the Gateway features.
+
 ## Fork & versioning
 
-This repository is a community-maintained fork of Kong OSS. This fork keeps the open-source Gateway usable without payment, with a best-effort maintenance approach. 
+This repository is a community-maintained fork of Kong OSS. This fork keeps the open-source Gateway usable without payment and with a best-effort maintenance approach. 
 
 Our goals:
 - Popularize Kong API Gateway as state of the art api gateway solution
@@ -44,45 +81,6 @@ If you need commercial-grade assistance (architecture, deployment, custom plugin
 
 Using this project **does not require** purchasing any services.
 
-<br />
-
-[![][kong-diagram]][kong-url]
-
----
-
-[Installation](https://konghq.com/install/#kong-community) | [Documentation](https://docs.konghq.com) | [Discussions](https://github.com/Kong/kong/discussions) | [Forum](https://discuss.konghq.com) | [Blog](https://konghq.com/blog) | [Builds][kong-master-builds] | [AI Gateway](https://konghq.com/products/kong-ai-gateway) | [Cloud Hosted Kong](https://konghq.com/kong-konnect/)
-
----
-
-## Getting Started
-
-If you prefer to use a cloud-hosted Kong, you can [sign up for a free trial of Kong Konnect](https://konghq.com/products/kong-konnect/register?utm_medium=Referral&utm_source=Github&utm_campaign=kong-gateway&utm_content=konnect-promo-in-gateway&utm_term=get-started) and get started in minutes. If not, you can follow the instructions below to get started with Kong on your own infrastructure.
-
-Let’s test drive Kong by adding authentication to an API in under 5 minutes.
-
-We suggest using the docker-compose distribution via the instructions below, but there is also a [docker installation](https://docs.konghq.com/gateway/latest/install/docker/#install-kong-gateway-in-db-less-mode) procedure if you’d prefer to run the Kong Gateway in DB-less mode.
-
-Whether you’re running in the cloud, on bare metal, or using containers, you can find every supported distribution on our [official installation](https://konghq.com/install/#kong-community) page.
-
-1) To start, clone the Docker repository and navigate to the compose folder.
-```cmd
-  $ git clone https://github.com/Kong/docker-kong
-  $ cd docker-kong/compose/
-```
-
-2) Start the Gateway stack using:
-```cmd
-  $ KONG_DATABASE=postgres docker-compose --profile database up
-```
-
-The Gateway is now available on the following ports on localhost:
-
-- `:8000` - send traffic to your service via Kong
-- `:8001` - configure Kong using Admin API or via [decK](https://github.com/kong/deck)
-- `:8002` - access Kong's management Web UI ([Kong Manager](https://github.com/Kong/kong-manager)) on [localhost:8002](http://localhost:8002)
-
-Next, follow the [quick start guide](https://docs.konghq.com/gateway-oss/latest/getting-started/configuring-a-service/
-) to tour the Gateway features.
 
 ### Getting started with AI Gateway for LLM and MCP
 
