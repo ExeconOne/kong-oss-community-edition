@@ -46,6 +46,11 @@ The Gateway is now available on the following ports on localhost:
 Next, follow the [quick start guide](https://docs.konghq.com/gateway-oss/latest/getting-started/configuring-a-service/
 ) to tour the Gateway features.
 
+
+### Getting started with AI Gateway for LLM and MCP
+
+If you would like to get started with Kong AI Gateway capabilities including LLM and MCP features, please refer to the [official AI documentation](https://developer.konghq.com/ai-gateway/).
+
 ## Fork & versioning
 
 This repository is a community-maintained fork of Kong OSS. This fork keeps the open-source Gateway usable without payment and with a best-effort maintenance approach. 
@@ -90,9 +95,6 @@ This project is a **community-maintained fork** and is **not an official Kong In
 Kong Inc. does not endorse or maintain this repository.
 
 
-### Getting started with AI Gateway for LLM and MCP
-
-If you would like to get started with Kong AI Gateway capabilities including LLM and MCP features, please refer to the [official AI documentation](https://developer.konghq.com/ai-gateway/).
 
 ## Features
 
