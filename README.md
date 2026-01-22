@@ -78,9 +78,16 @@ We track upstream compatibility via the mapping below.
 
 This fork is maintained by **Execon One**.
 
-If you need commercial-grade assistance (architecture, deployment, custom plugins, support/SLA), please reach out via Issues or Discussions and we can coordinate community-provided services. This is separate from Kong Inc. offerings; there is no affiliation.
+If you need commercial-grade assistance (architecture, deployment, custom plugins, support/SLA), please reach out via Issues or Discussions and we can coordinate community-provided services. 
 
 Using this project **does not require** purchasing any services.
+
+## Relationship to Kong
+
+Execon One is an **official Kong partner**.
+
+This project is a **community-maintained fork** and is **not an official Kong Inc. product**.
+Kong Inc. does not endorse or maintain this repository.
 
 
 ### Getting started with AI Gateway for LLM and MCP
