@@ -9,6 +9,41 @@ By providing functionality for proxying, routing, load balancing, health checkin
 
 Kong runs natively on Kubernetes thanks to its official [Kubernetes Ingress Controller](https://github.com/Kong/kubernetes-ingress-controller).
 
+## Fork & versioning
+
+This repository is a community-maintained fork of Kong OSS. This fork keeps the open-source Gateway usable without payment, with a best-effort maintenance approach. 
+
+Our goals:
+- Popularize Kong API Gateway as state of the art api gateway solution
+- Track upstream changes and incorporate fixes when possible for open source version.
+- Maintain compatibility with the original Kong OSS API, configuration, and plugin surface.
+- Publish open-source Docker images (e.g., `kong-oss-community-edition`) so the community can keep running new versions and updates.
+- Contribute our own fixes and updates when needed, while staying aligned with upstream behavior.
+
+Notes and credits:
+- This fork is not affiliated with Kong Inc. It does not replace or bundle Kong Inc. commercial offerings.
+- Original authorship remains credited to Kong Inc. and all contributors (see COPYRIGHT). The license stays Apache 2.0 (see LICENSE).
+- Execon One publishes independent releases starting at **v1.0.0**.
+- Our version numbers do **not** match upstream versions.
+
+Issues and PRs are welcome; maintenance is best effort.
+
+We track upstream compatibility via the mapping below.
+
+## Upstream mapping
+
+| Fork release | Upstream base | Upstream commit |
+|------------:|---------------|----------------|
+| v1.0.0      | v3.9.1       | 3556390e0 |
+
+## Professional Services
+
+This fork is maintained by **Execon One**.
+
+If you need commercial-grade assistance (architecture, deployment, custom plugins, support/SLA), please reach out via Issues or Discussions and we can coordinate community-provided services. This is separate from Kong Inc. offerings; there is no affiliation.
+
+Using this project **does not require** purchasing any services.
+
 <br />
 
 [![][kong-diagram]][kong-url]
@@ -110,7 +145,7 @@ Kong Inc. offers commercial subscriptions that enhance the Kong Gateway in a var
 ## License
 
 ```
-Copyright 2016-2026 Kong Inc.
+Copyright 2016-2025 Kong Inc.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
